@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://jm53kmormnyx"]
+
+[ext_resource type="PackedScene" uid="uid://dojrtnwix575g" path="res://player.tscn" id="1_rsw4m"]
+[ext_resource type="PackedScene" uid="uid://l7g75a5j842c" path="res://tile_map.tscn" id="2_vprkg"]
+
+[node name="World 1" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_rsw4m")]
+z_index = 1
+
+[node name="Test-Map" parent="." instance=ExtResource("2_vprkg")]
