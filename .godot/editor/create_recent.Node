@@ -1,4 +1,8 @@
+Marker2D
+Camera2D
+TileMap
+AnimatedSprite2D
+CharacterBody2D
 AnimationPlayer
 CollisionShape2D
 Sprite2D
-CharacterBody2D

@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699486829
+::res://::1699570539
 icon.svg::CompressedTexture2D::7422773451937666939::1698435916::1698448120::1::::<><>::
-player.gd::GDScript::-1::1698449784::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::8161552097944202722::1698454635::0::1::::<><>::res://player.gd<>uid://bougo47bgftsf::::res://assets/art/NinjaAdventure/NinjaAdventure/Actor/Characters/GreenNinja/SpriteSheet.png
+player.gd::GDScript::-1::1699487870::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::8161552097944202722::1699487870::0::1::::<><>::res://player.gd<>uid://bougo47bgftsf::::res://assets/art/NinjaAdventure/NinjaAdventure/Actor/Characters/GreenNinja/SpriteSheet.png
 README.md::TextFile::-1::1698445385::0::1::::<><>::
 ::res://assets/::1698448042
 ::res://assets/art/::1698448042

@@ -1,2 +1,5 @@
 res://player.tscn
-res://player.gd
+res://enemies/enemy_slime.tscn
+res://world.tscn
+res://enemies/enemy_slime.gd
+res://assets/art/NinjaAdventure/NinjaAdventure/LICENSE.txt

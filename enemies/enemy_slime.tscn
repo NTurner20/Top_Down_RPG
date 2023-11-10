@@ -1,0 +1,149 @@
+[gd_scene load_steps=20 format=3 uid="uid://dsh63oxmrbtbw"]
+
+[ext_resource type="Texture2D" uid="uid://dtofa1m1jy8ro" path="res://assets/art/NinjaAdventure/NinjaAdventure/Actor/Monsters/Slime/Slime.png" id="1_4puv2"]
+[ext_resource type="Script" path="res://enemies/enemy_slime.gd" id="1_mrepl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73hhx"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ev4lc"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bskto"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anvqn"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3mrj"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phn0k"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p70ju"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2apbu"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_20onk"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sq7yc"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha3no"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbnfr"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgrkm"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdif3"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohtn8"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uu14x"]
+atlas = ExtResource("1_4puv2")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5n4bv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73hhx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ev4lc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bskto")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anvqn")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3mrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phn0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p70ju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2apbu")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_20onk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sq7yc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha3no")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbnfr")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qgrkm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdif3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohtn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uu14x")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 4.0
+}]
+
+[node name="slime" type="CharacterBody2D" node_paths=PackedStringArray("endPoint")]
+script = ExtResource("1_mrepl")
+endPoint = NodePath("")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -7)
+sprite_frames = SubResource("SpriteFrames_5n4bv")
+animation = &"walk_right"
+frame_progress = 0.797941
